@@ -1,4 +1,4 @@
-package gangofcoders.dao.Impl;
+package gangofcoders.dao.impl;
 
  
 

@@ -11,7 +11,7 @@
       http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
 
-    <jpa:repositories base-package="gangofcoders" />
+    <jpa:repositories base-package="gangofcoders.dao" />
 
     <bean id="entityManager"
               class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
@@ -48,6 +48,7 @@
     <!-- Scan for transaction-based resources -->
     <context:component-scan base-package="gangofcoders" />
     <context:component-scan base-package="gangofcoders.main" />
+     <context:component-scan base-package="gangofcoders.dao.impl" />
 	
     <tx:annotation-driven transaction-manager="transactionManager" />
 
